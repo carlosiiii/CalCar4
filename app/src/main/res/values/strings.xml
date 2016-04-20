@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Caldera</string>
+    <string name="temp">Temp</string>
+    <string name="action_favorite">fav</string>
+    <string name="action_settings">settings</string>
+    <string name="action_settings_pi">settings pi</string>
+    <string name="title_activity_display_estadisticas">DisplayEstadisticasActivity</string>
+    <string name="str_manual">manual</string>
+    <string name="str_auto">auto</string>
+    <string name="str_m">M</string>
+    <string name="str_a">A</string>
+    <string name="str_sistema_on">Sistema ON</string>
+    <string name="str_sistema_off">Sistema OFF</string>
+    <string name="str_on_ejecutado">ON ejecutado</string>
+    <string name="str_off_ejecutado">OFF ejecutado</string>
+    <string name="str_enviando_comando_off">Enviando comando off ...</string>
+    <string name="str_enviando_comando_on">Enviando comando on ...</string>
+    <string name="wspublic">car-caldera.no-ip.org:43001/do_pi.php</string>
+    <string name="wsprivado">192.168.0.158:43001/do_pi.php</string>
+    <string name="redlocal">vodafoneD356</string>
+    <string name="wspublico_summary">Introduzca web service privado</string>
+    <string name="redlocal_summary">Introduzca red privada</string>
+    <string name="wsprivado_summary">Introduzca web service privado</string>
+    <string name="usuario_summary">Introduzca su nombre</string>
+    <string name="frecuenciarefresco_summary">Introduzca frecuencia de refresco en segundos</string>
+    <string name="frecuenciarefresco_title">Frecuencia de refresco</string>
+    <string name="wspublico_title">Web service público</string>
+    <string name="redlocal_title">Red local</string>
+    <string name="wsprivado_title">Web service privado</string>
+    <string name="usuario_title">Nombre del usuario</string>
+</resources>

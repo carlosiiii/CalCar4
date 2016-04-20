@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.cigsa.carlos.calcar4.Carlcar4MainActivity">
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_below="@+id/my_toolbar"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@+id/button1" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_below="@+id/my_toolbar"
+        android:layout_alignTop="@+id/progressBar1"
+        android:layout_alignRight="@+id/txt_temp_node0"
+        android:layout_alignLeft="@+id/txt_name_node0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Temp"
+        android:id="@+id/txt_temp_node0"
+        android:textColor="#c62828"
+        android:textStyle="normal"
+        android:textSize="40sp"
+        android:typeface="serif"
+        android:textAlignment="center"
+        android:layout_below="@+id/button1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="55dp"
+        android:layout_marginEnd="55dp" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:id="@+id/txt_name_node0"
+        android:textSize="30sp"
+        android:textIsSelectable="false"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="22dp"
+        android:layout_toStartOf="@+id/txt_temp_node0"
+        android:layout_above="@+id/txt_date_node0"
+        android:layout_toLeftOf="@+id/nodo0Up" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:id="@+id/txt_name_node1"
+        android:textSize="30sp"
+        android:textIsSelectable="false"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/txt_date_node0"
+        android:layout_alignLeft="@+id/txt_date_node0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Temp"
+        android:id="@+id/txt_temp_node1"
+        android:textColor="#c62828"
+        android:textStyle="normal"
+        android:textSize="40sp"
+        android:typeface="serif"
+        android:textAlignment="center"
+        android:layout_alignTop="@+id/txt_name_node1"
+        android:layout_alignLeft="@+id/txt_temp_node0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/txt_date_node0"
+        android:layout_below="@+id/txt_temp_node0"
+        android:layout_alignLeft="@+id/txt_name_node0"
+        android:layout_toLeftOf="@+id/txt_temp_node0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/txt_date_node1"
+        android:layout_below="@+id/txt_temp_node1"
+        android:layout_alignLeft="@+id/txt_name_node1"
+        android:layout_alignStart="@+id/txt_name_node1"
+        android:layout_toLeftOf="@+id/txt_temp_node1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/txt_hum_node0"
+        android:textColor="@android:color/holo_blue_light"
+        android:layout_alignBaseline="@+id/txt_date_node0"
+        android:layout_alignBottom="@+id/txt_date_node0"
+        android:layout_toLeftOf="@+id/textView"
+        android:layout_toStartOf="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/txt_hum_node1"
+        android:textColor="@android:color/holo_blue_light"
+        android:layout_below="@+id/txt_temp_node1"
+        android:layout_toLeftOf="@+id/textView2"
+        android:layout_toStartOf="@+id/textView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="%"
+        android:id="@+id/textView"
+        android:layout_below="@+id/txt_temp_node0"
+        android:layout_alignRight="@+id/txt_temp_node0"
+        android:layout_alignEnd="@+id/txt_temp_node0"
+        android:textColor="@android:color/holo_blue_light" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="%"
+        android:id="@+id/textView2"
+        android:textColor="@android:color/holo_blue_light"
+        android:layout_below="@+id/txt_temp_node1"
+        android:layout_alignRight="@+id/txt_temp_node1"
+        android:layout_alignEnd="@+id/txt_temp_node1" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nodo0Down"
+        android:src="@drawable/ic_arrow_drop_down_black_24dp"
+        android:layout_alignTop="@+id/txt_name_node0"
+        android:layout_toLeftOf="@+id/txt_temp_node0" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nodo0Up"
+        android:src="@drawable/ic_arrow_drop_up_black_24dp"
+        android:layout_alignTop="@+id/txt_name_node0"
+        android:layout_toLeftOf="@+id/txt_temp_node0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Sistema"
+        android:id="@+id/txt_sistema"
+        android:layout_below="@+id/txt_date_node1"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textStyle="bold|normal"
+        android:textIsSelectable="true"
+        android:singleLine="false"
+        android:background="@android:color/holo_blue_light"
+        android:textSize="35sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageFlash"
+        android:src="@drawable/ic_flash_on_black_24dp"
+        android:layout_alignBottom="@+id/txt_sistema"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/txt_sistema"
+        android:layout_alignLeft="@+id/progressBar1" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="50sp"
+        android:id="@+id/imageLock"
+        android:src="@drawable/ic_lock_black_24dp"
+        android:layout_alignTop="@+id/txt_temperatura_deseada"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="42dp"
+        android:layout_alignLeft="@+id/progressBar1"
+        android:clickable="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="50sp"
+        android:id="@+id/imageUnLock"
+        android:src="@drawable/ic_lock_open_black_24dp"
+        android:layout_alignTop="@+id/txt_temperatura_deseada"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="42dp"
+        android:layout_alignLeft="@+id/progressBar1"
+        android:clickable="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imagePower"
+        android:src="@drawable/ic_power_settings_new_black_24dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignLeft="@+id/progressBar1"
+        android:layout_below="@+id/txt_sistema"
+        android:layout_alignBottom="@+id/txt_temperatura_deseada"
+        android:layout_marginBottom="40sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Temperatura deseada"
+        android:id="@+id/txt_temperatura_deseada"
+        android:textSize="35sp"
+        android:background="@android:color/holo_blue_light"
+        android:textColor="@android:color/white"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:textAlignment="center"
+        android:layout_below="@+id/txt_sistema"
+        android:layout_marginTop="70dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="M"
+        android:id="@+id/txt_manual_automatica"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/imagePower"
+        android:layout_alignLeft="@+id/imagePower"
+        android:layout_below="@+id/txt_temperatura_deseada"
+        android:textStyle="bold"
+        android:textSize="32sp"
+        android:textIsSelectable="true"
+        android:textAlignment="center"
+        android:layout_marginTop="45sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/txt_sistema_date"
+        android:singleLine="true"
+        android:layout_alignLeft="@+id/txt_date_node1"
+        android:layout_below="@+id/txt_sistema_info" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/txt_sistema_name"
+        android:layout_alignBottom="@+id/txt_sistema_date"
+        android:layout_toLeftOf="@+id/imagePower"
+        android:layout_toRightOf="@+id/txt_name_node1"
+        android:singleLine="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/txt_sistema_info"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:layout_alignTop="@+id/imagePower"
+        android:layout_alignLeft="@+id/txt_sistema_date"
+        android:layout_alignRight="@+id/txt_hum_node1"
+        android:textIsSelectable="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Temp"
+        android:id="@+id/txt_temperatura_deseada_info"
+        android:layout_below="@+id/txt_temperatura_deseada"
+        android:layout_alignLeft="@+id/txt_sistema_date"
+        android:layout_above="@+id/txt_temperatura_deseada_date"
+        android:layout_alignRight="@+id/txt_sistema_name"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:layout_marginTop="10sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/txt_temperatura_deseada_date"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/txt_temperatura_deseada_info"
+        android:layout_toLeftOf="@+id/txt_manual_automatica"
+        android:textAlignment="center" />
+
+</RelativeLayout>

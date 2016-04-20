@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="Settings">
+
+        <EditTextPreference
+            android:title="@string/usuario_title"
+            android:key="Usuario"
+            android:defaultValue="Carlos"
+            android:summary="@string/usuario_summary"/>
+
+        <EditTextPreference
+            android:title="@string/wsprivado_title"
+            android:key="WebServicePrivado"
+            android:defaultValue="@string/wsprivado"
+            android:summary="@string/wsprivado_summary"/>
+
+        <EditTextPreference
+            android:title="@string/redlocal_title"
+            android:key="RedLocal"
+            android:defaultValue="@string/redlocal"
+            android:summary="@string/redlocal_summary"/>
+
+
+        <EditTextPreference
+            android:title="@string/wspublico_title"
+            android:key="WebServicePublico"
+            android:defaultValue="@string/wspublic"
+            android:summary="@string/wspublico_summary"/>
+
+
+        <EditTextPreference
+            android:title="@string/frecuenciarefresco_title"
+            android:key="FrecuenciaRefresco"
+            android:numeric="integer"
+            android:maxLength="2"
+            android:summary="@string/frecuenciarefresco_summary"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

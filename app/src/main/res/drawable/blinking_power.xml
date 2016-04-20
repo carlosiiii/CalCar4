@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/selected"
+    android:oneshot="false" >
+
+    <item
+        android:drawable="@drawable/ic_power_settings_new_black_24dp"
+        android:background="?android:colorBackground"
+        android:duration="500"/>
+    <item
+        android:drawable="@drawable/ic_power_settings_new_white_24dp"
+        android:background="?android:colorBackground"
+        android:duration="500"/>
+
+</animation-list>

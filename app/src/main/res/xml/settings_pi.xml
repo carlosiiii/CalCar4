@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="Settings Pi">
+
+        <EditTextPreference
+            android:title="Hysteresis"
+            android:key="hysteresis"
+            android:defaultValue="0.3"
+            android:numeric="decimal"
+            android:summary="Hysteresis"/>
+
+        <EditTextPreference
+            android:title="Max Temp"
+            android:key="max_temp"
+            android:defaultValue="24.0"
+            android:numeric="decimal"
+            android:summary="Max Temp"/>
+
+        <EditTextPreference
+            android:title="Min Temp"
+            android:key="min_temp"
+            android:defaultValue="15.0"
+            android:numeric="decimal"
+            android:summary="Min Temp"/>
+
+
+        <EditTextPreference
+            android:title="Calibration"
+            android:key="calibration"
+            android:defaultValue="0.2"
+            android:numeric="decimal"
+            android:summary="Calibration"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
