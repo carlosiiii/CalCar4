@@ -15,7 +15,7 @@
     <string name="str_off_ejecutado">OFF ejecutado</string>
     <string name="str_enviando_comando_off">Enviando comando off ...</string>
     <string name="str_enviando_comando_on">Enviando comando on ...</string>
-    <string name="wspublic">car-caldera.no-ip.org:43001/do_pi.php</string>
+    <string name="wspublic"></string>
     <string name="wsprivado">192.168.0.158:43001/do_pi.php</string>
     <string name="redlocal">vodafoneD356</string>
     <string name="wspublico_summary">Introduzca web service privado</string>
